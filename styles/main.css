@@ -1,0 +1,188 @@
+/* Comment Header for my website */
+/*      Brenton Morgan  
+    Southern Illinois University
+    Date Developed: 8-31-2021
+    Date Tested:    8-31-2021
+                                */
+
+/*Style for the navigation bar*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #9047ee;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*.nav
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: black;
+    height: 25%;
+    position: fixed;
+    overflow: visible;
+    }
+
+li a
+    {
+    display: block;
+    color:rgb(147, 63, 202);
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+li a:hover {
+  background-color:rgb(240, 49, 27);
+  color:rgb(43, 43, 43);
+  }
+
+.slicknav_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .slicknav_btn {
+    background: rgb(240, 49, 27);
+  }
+  .js #menu {
+		display:none;
+	}
+  .js .slicknav_menu {
+    display: block
+  }
+}*/
+
+/*Style for body and main content of home page*/
+.centerImage
+  {
+    border-radius: 50%;
+  }
+
+body
+    {
+    background-color: rgb(43, 43, 43)
+    }
+
+h1  {
+    color: #9047ee;
+    font-size: 8em;
+    margin-bottom: .3em;
+    text-align: center;
+    text-decoration: bold;
+  }
+
+h2  {
+    color:rgb(207, 210, 226)
+    }
+
+p   {
+    color:rgb(207, 210, 226)
+    }
+
+blockquote   {
+    color:rgb(207, 210, 226)
+    }
+
+/*Creator list on home page*/ 
+.creatorlist   {
+  color:rgb(207, 210, 226)
+  }
+
+.creators   {
+    color:rgb(207, 210, 226)
+    }
+
+/*contact address style control*/
+address   {
+    color:rgb(207, 210, 226)
+    }
+
+pre   {
+    color:rgb(207, 210, 226)
+    }
+
+a   {
+    color:#9047ee
+    }
+
+
+table {
+    margin: .3em;
+    width: 25%;
+  }
+  
+th {
+    padding: .2em;
+  }
+  
+td {
+    background-color: #ffc;
+    border: 1px solid #900;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+#trHeader {
+    color: #900;
+    text-decoration: underline;
+  }
+  
+.centerCell {
+    text-align: center;
+  }
+
+/*about us page*/
+.row {
+  display: flex;
+}
+
+.columnleft {
+  flex: 20%;
+  padding: 5%;
+  background-color: rgb(29, 29, 29);
+}
+
+.columnright {
+  flex: 60%;
+  padding: 5%;
+  background-color: rgb(24, 24, 24);
+}

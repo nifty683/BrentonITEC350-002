@@ -3,8 +3,8 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 8-31-2021
-    Date Tested:    8-31-2021
+    Date Developed: 9-23-2021
+    Date Tested:    9-30-2021
                                 -->
 
 <html lang="en-US">
@@ -13,45 +13,59 @@
     <head>
         <meta charset="utf-8">
         <title>Jelly Media - Home</title> 
-        <link href="StyleSheet.css" rel="stylesheet">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta name="description" content="An independent media company with 7 creators"> <meta name="keywords" 
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/slicknav.css" rel="stylesheet">
+        <script src="JS/jquery.slicknav.min.js"></script>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
         content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
             gaming, streaming">
     </head>
 
     <!-- navigation system for website-->
-    <ul>
-        <li><a href="index.htm">HOME</a></li>
-        <li><a href="content.htm">CONTENT</a></li>
-        <li><a href="merchandise.htm">MERCH</a></li>
-        <li><a href="aboutus.htm">ABOUT US</a></li>
-        <li><a href="contactus.htm">CONTACT</a></li>
-    </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.htm">HOME</a>
+        <a href="content.htm">CONTENT</a>
+        <a href="merchandise.htm">MERCH</a>
+        <a href="aboutus.htm">THE TEAM</a>
+        <a href="contactus.htm">CONTACT</a>
+    </div>
+      
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+    
     <!-- content of website main page -->
     <body>
         <header>
-            <center><img src="images/IntenseCover.png" class=centerImage alt="Jelly Logo" width="650"></center>
-            <style type="text/css">
-                .centerImage
-                {
-                 text-align:center;
-                 display:block;
-                }
-                </style>
+            <center><img src="images/IntenseCover.png" class=centerImage alt="Jelly Logo" width="50%"></center>
         </header> 
             <h1>Jelly Media</h1> 
             <h2>Innovating Media and Content</h2>
             <p>Check us out on all streaming platforms and music stores. Physical copies of our artists albums are available on the merchandise page.</p>
          
-            <p>We have 7 creators signed currently. Each artist has uniquely entertaining content, but we all have one purpose.</p>
+            <p>We have 8 creators signed currently. Each artist has uniquely entertaining content, but we all have one purpose.</p>
             <!-- block quote to separate the header for the artists list -->
             <blockquote>Specializing in: Music, Videos, Art, Merchandise
             </blockquote>
             <!--list of artists -->
-            <ul2>
-                <li>Brenton</li> <li>ajlnx</li> <li>Mayce T</li> <li>JDiddy</li> <li>jaeso</li> <li>Bayasgalant</li> <li>Krotz</li>
-            </ul2> 
+            <ul class="creatorlist">
+                <li class="creators">Brenton</li> <li class="creators">ajlnx</li> 
+                <li class="creators">Mayce T</li> <li class="creators">JDiddy</li> 
+                <li class="creators">jaeso</li>   <li class="creators">Bayasgalant</li> 
+                <li class="creators">Krotz</li>   <li class="creators">IsaacTheLegend27</li>
+            </ul> 
               <!--back to regular text providing website information -->
             <p>Our online merchandise store will be <em>opening soon.</em></p> 
             <p>Here is a discount code for being here before the store drops: <strong>EARLYBIRD20</strong>.</p> 

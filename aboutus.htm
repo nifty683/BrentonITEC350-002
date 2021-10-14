@@ -3,8 +3,8 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 8-31-2021
-    Date Tested:    8-31-2021
+    Date Developed: 9-23-2021
+    Date Tested:    9-30-2021
                                 -->
 
 <html lang="en-US">
@@ -12,23 +12,131 @@
     <!-- metadata for website information header-->
     <head>
         <meta charset="utf-8">
-        <title>Jelly Media - About Us</title> 
-        <link href="StyleSheet.css" rel="stylesheet">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta name="description" content="An independent media company with 7 creators"> <meta name="keywords" 
+        <title>Jelly Media - Home</title> 
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/slicknav.css" rel="stylesheet">
+        <script src="JS/jquery.slicknav.min.js"></script>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
         content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
             gaming, streaming">
     </head>
-                                
+
     <!-- navigation system for website-->
-    <ul>
-        <li><a href="index.htm">HOME</a></li>
-        <li><a href="content.htm">CONTENT</a></li>
-        <li><a href="merchandise.htm">MERCH</a></li>
-        <li><a href="aboutus.htm">ABOUT US</a></li>
-        <li><a href="contactus.htm">CONTACT</a></li>
-    </ul>
-                                
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.htm">HOME</a>
+        <a href="content.htm">CONTENT</a>
+        <a href="merchandise.htm">MERCH</a>
+        <a href="aboutus.htm">THE TEAM</a>
+        <a href="contactus.htm">CONTACT</a>
+    </div>
+      
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+                  
     <body>
         <h1>ABOUT US</h1>
+        <center><h2>Learn what our team of creators is about</h2></center>
+        <!--Brenton-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/brenton.jpeg" class=aboutImage alt="Pic of Brenton" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Brenton is the founder and the first signed creator of Jelly Media. 
+                    He began his career making music in 2019, and since has done the
+                    occasional stream, YouTube video, and drops some NFT art every once in awhile.</p>
+            </div>
+        </div>
+        <!--ajlnx-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Andy" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Typical goofy white rapper. 
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--Mayce T-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Mayce" width=100%>
+            </div>
+            <div class="columnright">
+                <p>She got mad pipes. 
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--JDiddy-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/jdiddy.jpg" class=aboutImage alt="Pic of Jordan" width=100%>
+            </div>
+            <div class="columnright">
+                <p>This man is a knob.
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--jaeso-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/adam.jpeg" class=aboutImage alt="Pic of Adam" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Jaeso is a streamer and content creator. He is well known for his unique
+                    sense of humor and incredible talents acrossed a plethora of games. 
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--Bayasgalant-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/bay.jpeg" class=aboutImage alt="Pic of Bay" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Bay Morgan is the wife of Brenton.
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--Krotz-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Jake" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Jake Krotz is a sneakerhead. 
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
+        <!--IsaacTheLegend27-->
+        <div class="row">
+            <div class="columnleft">
+                <img src="images/isaac.jpg" class=aboutImage alt="Pic of Isaac" width=100%>
+            </div>
+            <div class="columnright">
+                <p>Isaac Yates is a big Fortnite addict.  
+                </p>
+                <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
+            </div>
+        </div>
     </body>
+</html>
