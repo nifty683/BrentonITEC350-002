@@ -5,6 +5,24 @@
     Date Tested:    8-31-2021
                                 */
 
+/*logo across top*/
+.headlogo {
+  position: relative;
+  display: inline-block;
+}
+
+.headlogo .topimg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.headlogo:hover .topimg {
+  display: inline;
+}
+
 /*Style for the navigation bar*/
 
 .sidenav {
@@ -51,45 +69,48 @@
   .sidenav a {font-size: 18px;}
 }
 
-/*.nav
-    {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: black;
-    height: 25%;
-    position: fixed;
-    overflow: visible;
+
+/*this whole section is commented out, cause it is my old navigation using slicknav that didn't function well in my opinion.
+  so i figured out how to do the navigation above*/
+  /*.nav
+      {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 10%;
+      background-color: black;
+      height: 25%;
+      position: fixed;
+      overflow: visible;
+      }
+
+  li a
+      {
+      display: block;
+      color:rgb(147, 63, 202);
+      padding: 8px 16px;
+      text-decoration: none;
+      }
+  li a:hover {
+    background-color:rgb(240, 49, 27);
+    color:rgb(43, 43, 43);
     }
 
-li a
-    {
-    display: block;
-    color:rgb(147, 63, 202);
-    padding: 8px 16px;
-    text-decoration: none;
+  .slicknav_menu {
+    display: none;
+  }
+
+  @media only screen and (max-width: 40em) {
+    .slicknav_btn {
+      background: rgb(240, 49, 27);
     }
-li a:hover {
-  background-color:rgb(240, 49, 27);
-  color:rgb(43, 43, 43);
-  }
-
-.slicknav_menu {
-  display: none;
-}
-
-@media only screen and (max-width: 40em) {
-  .slicknav_btn {
-    background: rgb(240, 49, 27);
-  }
-  .js #menu {
-		display:none;
-	}
-  .js .slicknav_menu {
-    display: block
-  }
-}*/
+    .js #menu {
+      display:none;
+    }
+    .js .slicknav_menu {
+      display: block
+    }
+  }*/
 
 /*Style for body and main content of home page*/
 .centerImage
@@ -185,4 +206,48 @@ td {
   flex: 60%;
   padding: 5%;
   background-color: rgb(24, 24, 24);
+}
+
+/* Contact us page */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #9047ee;
+  color: #f1f1f1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #900;
+}
+
+input[type=reset] {
+  background-color: #900;
+  color: #f1f1f1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #9047ee;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(43, 43, 43);
+  padding: 20px;
 }

@@ -3,8 +3,8 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 9-23-2021
-    Date Tested:    9-30-2021
+    Date Developed: 11-15-2021
+    Date Tested:    11-16-2021
                                 -->
 
 <html lang="en-US">
@@ -15,12 +15,24 @@
         <title>Jelly Media - Home</title> 
         <link href="styles/main.css" rel="stylesheet">
         <link href="styles/slicknav.css" rel="stylesheet">
+        <link href="styles/printstyle.css" rel="stylesheet" media="print">
         <script src="JS/jquery.slicknav.min.js"></script>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
         content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
             gaming, streaming">
     </head>
+
+
+    <!-- Website title bar-->
+    <body>
+        <header>
+            <div class="headlogo">
+                <img src="images/jellylogo.png" alt="Jelly Media Logo" width=20%>
+                <img src="images/jellyblack.png" alt="Jelly Media Logo Black" class="topimg" width=20%>
+            </div>
+        </header>
+    </body>
 
     <!-- navigation system for website-->
     <div id="mySidenav" class="sidenav">
@@ -45,7 +57,7 @@
     </script>
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
-    
+
     <!-- content of website main page -->
     <body>
         <header>
@@ -54,7 +66,11 @@
             <h1>Jelly Media</h1> 
             <h2>Innovating Media and Content</h2>
             <p>Check us out on all streaming platforms and music stores. Physical copies of our artists albums are available on the merchandise page.</p>
-         
+            <!--audio track-->
+    <audio controls autoplay>
+        <source src="sound/warm.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
             <p>We have 8 creators signed currently. Each artist has uniquely entertaining content, but we all have one purpose.</p>
             <!-- block quote to separate the header for the artists list -->
             <blockquote>Specializing in: Music, Videos, Art, Merchandise
@@ -85,6 +101,19 @@ IL, 62902
     
            
 
+
+            <table>
+                <tr>
+                  <th>Special Thanks</th>
+                  <th>Logan Jearlds</th>
+                  <th>Mike Morgan</th>
+                </tr>
+                <tr>
+                  <td>Jack Kestner</td>
+                  <td>Renee Morgan</td>
+                  <td>Nergui Hayan</td>
+                </tr>
+              </table>
     </body>
 
 </html>

@@ -22,6 +22,16 @@
             gaming, streaming">
     </head>
 
+    <!-- Website title bar-->
+    <body>
+        <header>
+            <div class="headlogo">
+                <img src="images/jellylogo.png" alt="Jelly Media Logo" width=20%>
+                <img src="images/jellyblack.png" alt="Jelly Media Logo Black" class="topimg" width=20%>
+            </div>
+        </header>
+    </body>
+
     <!-- navigation system for website-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -48,4 +58,96 @@
     
     <body>
         <h1>CONTACT US</h1>
+        <div class="container">
+            <form action="action_page.php">
+            
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" placeholder="Enter email">
+
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="Enter a password">
+
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+          
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your zip">
+          
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    <option value="connecticut">Connecticut</option>
+                    <option value="delaware">Delaware</option>
+                    <option value="florida">Florida</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="louisiana">Louisiana</option>
+                    <option value="maine">Maine</option>
+                    <option value="maryland">Maryland</option>
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                    <option value="missouri">Missouri/option>
+                    <option value="montana">Montana</option>
+                    <option value="nebraska">Nebraska</option>
+                    <option value="nevada">Nevada</option>
+                    <option value="new hampshire">New Hampshire</option>
+                    <option value="new jersey">New Jersey</option>
+                    <option value="new mexico">New Mexico</option>
+                    <option value="new york">New York</option>
+                    <option value="north carolina">North Carolina</option>
+                    <option value="north dakota">North Dakota</option>
+                    <option value="ohio">Ohio</option>
+                    <option value="oklahoma">Oklahoma</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="rhode island">Rhode Island</option>
+                    <option value="south carolina">South Carolina</option>
+                    <option value="south dakota">South Dakota</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="utah">Utah</option>
+                    <option value="vermont">Vermont</option>
+                    <option value="virginia">Virginia</option>
+                    <option value="washington">Washington</option>
+                    <option value="west virginia">West Virginia</option>
+                    <option value="wisconsin">Wisconsin</option>
+                    <option value="wyoming">Wyoming</option>
+                </select>
+                
+                <label for="regarding">Regarding</label>
+                <select id="regarding" name="regarding">
+                    <option value="features">Features</option>
+                    <option value="applications">Application</option>
+                    <option value="events">Events</option>
+                    <option value="questions">Questions</option>
+                    <option value="concerns">Concerns</option>
+                    <option value="other">Other</option>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+          
+            </form>
+          </div>
     </body>
