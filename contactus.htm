@@ -3,46 +3,38 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 8-31-2021
-    Date Tested:    8-31-2021
+    Date Developed: 12-5-2021
+    Date Tested:    12-10-2021
                                 -->
 
 <html lang="en-US">
 
-    <!-- metadata for website information header-->
-    <head>
-        <meta charset="utf-8">
-        <title>Jelly Media - Home</title> 
-        <link href="styles/main.css" rel="stylesheet">
-        <link href="styles/slicknav.css" rel="stylesheet">
-        <script src="JS/jquery.slicknav.min.js"></script>
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
-        content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
-            gaming, streaming">
-    </head>
-
-    <!-- Website title bar-->
-    <body>
-        <header>
-            <div class="headlogo">
-                <img src="images/jellylogo.png" alt="Jelly Media Logo" width=20%>
-                <img src="images/jellyblack.png" alt="Jelly Media Logo Black" class="topimg" width=20%>
-            </div>
-        </header>
-    </body>
+  <!-- metadata for website information header-->
+  <head>
+      <meta charset="utf-8">
+      <title>Jelly Media - Home</title> 
+      <link href="styles/main.css" rel="stylesheet">
+      <link href="styles/slicknav.css" rel="stylesheet">
+      <script src="JS/jquery.slicknav.min.js"></script>
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
+      content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
+        gaming, streaming">
+  </head>
 
     <!-- navigation system for website-->
-    <div id="mySidenav" class="sidenav">
+  <div class="flexcontainer">
+      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.htm">HOME</a>
         <a href="content.htm">CONTENT</a>
         <a href="merchandise.htm">MERCH</a>
+        <a href="imagelibrary.htm">IMAGES</a>
         <a href="aboutus.htm">THE TEAM</a>
         <a href="contactus.htm">CONTACT</a>
-    </div>
-      
-    <script>
+      </div>
+
+      <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
           document.getElementById("main").style.marginLeft = "250px";
@@ -52,14 +44,22 @@
           document.getElementById("mySidenav").style.width = "0";
           document.getElementById("main").style.marginLeft= "0";
         }
-    </script>
+        </script>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
+        <!-- Website title bar-->
+      <header>
+        <div class="headlogo">
+          <center><img src="images/jellylogo.png" alt="Jelly Media Logo" width=30%></center>
+        </div>
+      </header>
+  </div>
     
     <body>
         <h1>CONTACT US</h1>
         <div class="container">
-            <form action="action_page.php">
+            <form action="back2home.htm" method="post">
             
                 <label for="email">email</label>
                 <input type="text" id="email" name="email" placeholder="Enter email">
@@ -145,7 +145,7 @@
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           
-                <input type="submit" value="Submit">
+                <a href="back2home.htm"><input type="submit" value="Submit"></a>
                 <input type="reset" value="Reset">
           
             </form>

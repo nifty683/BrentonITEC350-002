@@ -3,48 +3,39 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 11-15-2021
-    Date Tested:    11-16-2021
+    Date Developed: 12-1-2021
+    Date Tested:    12-10-2021
                                 -->
 
 <html lang="en-US">
 
-    <!-- metadata for website information header-->
-    <head>
-        <meta charset="utf-8">
-        <title>Jelly Media - Home</title> 
-        <link href="styles/main.css" rel="stylesheet">
-        <link href="styles/slicknav.css" rel="stylesheet">
-        <link href="styles/printstyle.css" rel="stylesheet" media="print">
-        <script src="JS/jquery.slicknav.min.js"></script>
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
-        content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
-            gaming, streaming">
-    </head>
-
-
-    <!-- Website title bar-->
-    <body>
-        <header>
-            <div class="headlogo">
-                <img src="images/jellylogo.png" alt="Jelly Media Logo" width=20%>
-                <img src="images/jellyblack.png" alt="Jelly Media Logo Black" class="topimg" width=20%>
-            </div>
-        </header>
-    </body>
+  <!-- metadata for website information header-->
+  <head>
+      <meta charset="utf-8">
+      <title>Jelly Media - Home</title> 
+      <link href="styles/main.css" rel="stylesheet">
+      <link href="styles/slicknav.css" rel="stylesheet">
+      <link href="styles/printstyle.css" rel="stylesheet" media="print">
+      <script src="JS/jquery.slicknav.min.js"></script>
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
+      content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
+        gaming, streaming">
+  </head>
 
     <!-- navigation system for website-->
-    <div id="mySidenav" class="sidenav">
+  <div class="flexcontainer">
+      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.htm">HOME</a>
         <a href="content.htm">CONTENT</a>
         <a href="merchandise.htm">MERCH</a>
+        <a href="imagelibrary.htm">IMAGES</a>
         <a href="aboutus.htm">THE TEAM</a>
         <a href="contactus.htm">CONTACT</a>
-    </div>
-      
-    <script>
+      </div>
+
+      <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
           document.getElementById("main").style.marginLeft = "250px";
@@ -54,23 +45,81 @@
           document.getElementById("mySidenav").style.width = "0";
           document.getElementById("main").style.marginLeft= "0";
         }
-    </script>
+        </script>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 
+        <!-- Website title bar-->
+      <header>
+        <div class="headlogo">
+          <center><img src="images/jellylogo.png" alt="Jelly Media Logo" width=30%></center>
+        </div>
+      </header>
+  </div>
     <!-- content of website main page -->
-    <body>
-        <header>
-            <center><img src="images/IntenseCover.png" class=centerImage alt="Jelly Logo" width="50%"></center>
-        </header> 
-            <h1>Jelly Media</h1> 
+  <div class=flexcontainerslides>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+
+      <!-- Slideshow images -->
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY1.jpg" style="width:100%">
+        <div class="text">CREATING</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY2.jpg" style="width:100%">
+        <div class="text">INNOVATING</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY3.jpg" style="width:100%">
+        <div class="text">DYNAMIC</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY4.jpg" style="width:100%">
+        <div class="text">HYPE</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY5.jpg" style="width:100%">
+        <div class="text">SUBTLE</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY6.jpg" style="width:100%">
+        <div class="text">CURRENT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY7.jpg" style="width:100%">
+        <div class="text">INSPIRING</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY8.jpg" style="width:100%">
+        <div class="text">SIMPLE</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/HOMESLIDES/JELLY9.jpg" style="width:100%">
+        <div class="text">JELLY MEDIA</div>
+      </div>
+    </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    <script src="JS/homepageslideshow.js"></script>
+    
+    <h1>Jelly Media</h1>
+  </div>
             <h2>Innovating Media and Content</h2>
             <p>Check us out on all streaming platforms and music stores. Physical copies of our artists albums are available on the merchandise page.</p>
-            <!--audio track-->
-    <audio controls autoplay>
-        <source src="sound/warm.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
             <p>We have 8 creators signed currently. Each artist has uniquely entertaining content, but we all have one purpose.</p>
             <!-- block quote to separate the header for the artists list -->
             <blockquote>Specializing in: Music, Videos, Art, Merchandise
@@ -98,7 +147,11 @@ Jelly Media
 Carbondale
 IL, 62902
             </pre> 
-    
+            <!--audio track-->
+            <audio controls autoplay>
+              <source src="sound/warm.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
            
 
 

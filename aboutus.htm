@@ -3,8 +3,8 @@
 <!-- Comment Header for my website -->
 <!--    Brenton Morgan  
     Southern Illinois University
-    Date Developed: 9-23-2021
-    Date Tested:    9-30-2021
+    Date Developed: 12-9-2021
+    Date Tested:    12-10-2021
                                 -->
 
 <html lang="en-US">
@@ -13,56 +13,57 @@
     <head>
         <meta charset="utf-8">
         <title>Jelly Media - Home</title> 
-        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/aboutus.css" rel="stylesheet">
         <link href="styles/slicknav.css" rel="stylesheet">
         <script src="JS/jquery.slicknav.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="JS/rollover.js"></script>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <meta name="description" content="An independent media company with 8 creators"> <meta name="keywords" 
         content="Brenton, ajlnx, Mayce T, jaeso, JDiddy, Bayasgalant, music, Hip-Hop, Pop, Alt Rock, content, media,
             gaming, streaming">
     </head>
 
-    <!-- Website title bar-->
-    <body>
-        <header>
-            <div class="headlogo">
-                <img src="images/jellylogo.png" alt="Jelly Media Logo" width=20%>
-                <img src="images/jellyblack.png" alt="Jelly Media Logo Black" class="topimg" width=20%>
-            </div>
-        </header>
-    </body>
-
     <!-- navigation system for website-->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.htm">HOME</a>
-        <a href="content.htm">CONTENT</a>
-        <a href="merchandise.htm">MERCH</a>
-        <a href="aboutus.htm">THE TEAM</a>
-        <a href="contactus.htm">CONTACT</a>
-    </div>
-      
-    <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-    </script>
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
-                  
+    <div class="flexcontainer">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.htm">HOME</a>
+          <a href="content.htm">CONTENT</a>
+          <a href="merchandise.htm">MERCH</a>
+          <a href="imagelibrary.htm">IMAGES</a>
+          <a href="aboutus.htm">THE TEAM</a>
+          <a href="contactus.htm">CONTACT</a>
+        </div>
+  
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+  
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+  
+          <!-- Website title bar-->
+        <header>
+          <div class="headlogo">
+            <center><img src="images/jellylogo.png" alt="Jelly Media Logo" width=30%></center>
+          </div>
+        </header>
+    </div>                  
     <body>
         <h1>ABOUT US</h1>
         <center><h2>Learn what our team of creators is about</h2></center>
         <!--Brenton-->
         <div class="row">
-            <div class="columnleft">
-                <img src="images/brenton.jpeg" class=aboutImage alt="Pic of Brenton" width=100%>
+            <div class="columnleft" id="image_rollovers">
+                <img src="images/CREATORS/brenton.jpeg" class=aboutImage alt="Pic of Brenton" width=100% id="images/CREATORS/brenton2.png">
             </div>
             <div class="columnright">
                 <p>Brenton is the founder and the first signed creator of Jelly Media. 
@@ -70,7 +71,7 @@
                     occasional stream, YouTube video, and drops some NFT art every once in awhile.</p>
             </div>
         </div>
-        <!--ajlnx-->
+        <!--ajlnx                                                                                                           some of these are currently commented out because I still never got pictures for them
         <div class="row">
             <div class="columnleft">
                 <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Andy" width=100%>
@@ -80,8 +81,8 @@
                 </p>
                 <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
             </div>
-        </div>
-        <!--Mayce T-->
+        </div>-->
+        <!--Mayce T
         <div class="row">
             <div class="columnleft">
                 <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Mayce" width=100%>
@@ -91,11 +92,11 @@
                 </p>
                 <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
             </div>
-        </div>
+        </div>-->
         <!--JDiddy-->
-        <div class="row">
+        <div class="row" id="image_rollovers">
             <div class="columnleft">
-                <img src="images/jdiddy.jpg" class=aboutImage alt="Pic of Jordan" width=100%>
+                <img src="images/CREATORS/jdiddy.jpg" class=aboutImage alt="Pic of Jordan" width=100% id="images/CREATORS/jdiddy2.png">
             </div>
             <div class="columnright">
                 <p>This man is a knob.
@@ -104,9 +105,9 @@
             </div>
         </div>
         <!--jaeso-->
-        <div class="row">
+        <div class="row" id="image_rollovers">
             <div class="columnleft">
-                <img src="images/adam.jpeg" class=aboutImage alt="Pic of Adam" width=100%>
+                <img src="images/CREATORS/adam.jpeg" class=aboutImage alt="Pic of Adam" width=100% id="images/CREATORS/adam2.png">
             </div>
             <div class="columnright">
                 <p>Jaeso is a streamer and content creator. He is well known for his unique
@@ -116,9 +117,9 @@
             </div>
         </div>
         <!--Bayasgalant-->
-        <div class="row">
+        <div class="row" id="image_rollovers">
             <div class="columnleft">
-                <img src="images/bay.jpeg" class=aboutImage alt="Pic of Bay" width=100%>
+                <img src="images/CREATORS/bay.jpeg" class=aboutImage alt="Pic of Bay" width=100% id="images/CREATORS/bay2.png">
             </div>
             <div class="columnright">
                 <p>Bay Morgan is the wife of Brenton.
@@ -126,7 +127,7 @@
                 <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
             </div>
         </div>
-        <!--Krotz-->
+        <!--Krotz
         <div class="row">
             <div class="columnleft">
                 <img src="images/artflow_202103091400.png" class=aboutImage alt="Pic of Jake" width=100%>
@@ -136,11 +137,11 @@
                 </p>
                 <a href="www.twitch.tv/jaeso01">www.twitch.tv/jaeso01</a>
             </div>
-        </div>
+        </div>-->
         <!--IsaacTheLegend27-->
-        <div class="row">
+        <div class="row" id="image_rollovers">
             <div class="columnleft">
-                <img src="images/isaac.jpg" class=aboutImage alt="Pic of Isaac" width=100%>
+                <img src="images/CREATORS/isaac.jpg" class=aboutImage alt="Pic of Isaac" width=100% id="images/CREATORS/isaac2.png">
             </div>
             <div class="columnright">
                 <p>Isaac Yates is a big Fortnite addict.  

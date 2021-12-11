@@ -5,24 +5,38 @@
     Date Tested:    8-31-2021
                                 */
 
+/*flex to position the logo and navigation on the same row*/
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexcontainerslides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexcontent {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  align-items: center;
+}
+
+.flexsocials {
+  display: flex;
+  flex-direction: column;
+}
+
 /*logo across top*/
 .headlogo {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  min-width: 500px;
 }
-
-.headlogo .topimg {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.headlogo:hover .topimg {
-  display: inline;
-}
-
 /*Style for the navigation bar*/
 
 .sidenav {
@@ -69,58 +83,54 @@
   .sidenav a {font-size: 18px;}
 }
 
+/*Slideshow*/
+.slideshow-container {
+  max-width: 60%;
+  min-width: 800px;
+  position: relative;
+  /*filter: blur(1px);
+  -webkit-filter: blur(1px);*/
+}
 
-/*this whole section is commented out, cause it is my old navigation using slicknav that didn't function well in my opinion.
-  so i figured out how to do the navigation above*/
-  /*.nav
-      {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 10%;
-      background-color: black;
-      height: 25%;
-      position: fixed;
-      overflow: visible;
-      }
+/*Captions*/
+.text {
+  color: #f2f2f2;
+  opacity: 75%;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 2%;
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  text-align: left;
+}
 
-  li a
-      {
-      display: block;
-      color:rgb(147, 63, 202);
-      padding: 8px 16px;
-      text-decoration: none;
-      }
-  li a:hover {
-    background-color:rgb(240, 49, 27);
-    color:rgb(43, 43, 43);
-    }
+/*Images hidden*/
+.mySlides {display: none;}
 
-  .slicknav_menu {
-    display: none;
-  }
 
-  @media only screen and (max-width: 40em) {
-    .slicknav_btn {
-      background: rgb(240, 49, 27);
-    }
-    .js #menu {
-      display:none;
-    }
-    .js .slicknav_menu {
-      display: block
-    }
-  }*/
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .25} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .25} 
+  to {opacity: 1}
+}
 
 /*Style for body and main content of home page*/
-.centerImage
-  {
-    border-radius: 50%;
-  }
-
 body
     {
-    background-color: rgb(43, 43, 43)
+    background-color: rgb(30, 30, 30)
     }
 
 h1  {
@@ -132,33 +142,33 @@ h1  {
   }
 
 h2  {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 p   {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 blockquote   {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 /*Creator list on home page*/ 
 .creatorlist   {
-  color:rgb(207, 210, 226)
+  color:#eeeeee
   }
 
 .creators   {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 /*contact address style control*/
 address   {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 pre   {
-    color:rgb(207, 210, 226)
+    color:#eeeeee
     }
 
 a   {
@@ -212,7 +222,7 @@ td {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #eeeeee;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -222,7 +232,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #9047ee;
-  color: #f1f1f1;
+  color: #eeeeee;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -235,7 +245,7 @@ input[type=submit]:hover {
 
 input[type=reset] {
   background-color: #900;
-  color: #f1f1f1;
+  color: #eeeeee;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -250,4 +260,11 @@ input[type=reset]:hover {
   border-radius: 5px;
   background-color: rgb(43, 43, 43);
   padding: 20px;
+}
+
+/*content page*/
+.socials {
+  font-size: 40px;
+  list-style-type: none;
+  color: #eeeeee;
 }
